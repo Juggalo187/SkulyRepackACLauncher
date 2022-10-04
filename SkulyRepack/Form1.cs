@@ -491,7 +491,7 @@ namespace SkulyRepack
                 var line1 = File.ReadLines(@"updater\launcher\wowstart.txt").First();
                 var fInfo2 = new FileInfo(line1);
                 
-                if (fInfo2.Exists == false)
+                if (fInfo2.Exists)
                 {
 
                     var wow = new Process();
